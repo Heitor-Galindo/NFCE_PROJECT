@@ -41,10 +41,10 @@
 
 ## TO-DO
 
-add date/time of purchase to dataframe
-add error dealing in functions
-create table for products
-create table for vendors (?)
-create function to insert product's dataframe into database
-create web interface
-create user area with auth (?)
+add date/time of purchase to dataframe  
+add error dealing in functions  
+create table for products  
+create table for vendors (?)  
+create function to insert product's dataframe into database  
+create web interface  
+create user area with auth (?)  
