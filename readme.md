@@ -18,7 +18,7 @@
 3. Install packages. ( <https://pip.pypa.io/en/stable/cli/pip_install/> )
 
     ```sh
-    pip install -r requirements.txt
+    pip install -r utils/requirements.txt
     ```
 
 ## DOCUMENTATION
