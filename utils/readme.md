@@ -2,9 +2,24 @@
 
 ## INSTALATION
 
-1. Create a virtual environment `python3 -m venv env`
-2. Activate the environment `source env/bi/activate`
-3. Execute `pip install -r requirements.txt` to install all dependencies. (must have pip installed)
+1. Start Postgres 14.4.
+
+    ```sh
+    docker compose -f database_operations/docker-compose.yml up
+    ```
+
+2. Create a virtual environment. ( <https://docs.python.org/3/library/venv.html> )
+
+    ```sh
+    python3 -m venv env
+    source env/bi/activate
+    ```
+
+3. Install packages. ( <https://pip.pypa.io/en/stable/cli/pip_install/> )
+
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 ## DOCUMENTATION
 
@@ -17,5 +32,8 @@
 |DOTENV             | <https://github.com/theskumar/python-dotenv>              |
 |PYTHON 3.10        | <https://docs.python.org/3/>                              |
 |REQUESTS           | <https://requests.readthedocs.io/en/latest/>              |
+|PIP                | <https://pip.pypa.io/en/stable/getting-started/>          |
+|DOCKER ENGINE      | <https://docs.docker.com/engine/>                         |
+|DOCKER COMPOSE     | <https://docs.docker.com/compose/>                        |
 
 ---
