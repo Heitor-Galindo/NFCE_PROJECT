@@ -2,7 +2,9 @@
 
 ## INSTALATION
 
-Execute `pip install -r requirements.txt` to install all dependencies. (must have pip installed)
+1. Create a virtual environment `python3 -m venv env`
+2. Activate the environment `source env/bi/activate`
+3. Execute `pip install -r requirements.txt` to install all dependencies. (must have pip installed)
 
 ## DOCUMENTATION
 
