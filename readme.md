@@ -35,5 +35,16 @@
 |PIP                | <https://pip.pypa.io/en/stable/getting-started/>          |
 |DOCKER ENGINE      | <https://docs.docker.com/engine/>                         |
 |DOCKER COMPOSE     | <https://docs.docker.com/compose/>                        |
+|PANDAS             | <https://pandas.pydata.org/docs/>                         |
 
 ---
+
+## TO-DO
+
+add date/time of purchase to dataframe
+add error dealing in functions
+create table for products
+create table for vendors (?)
+create function to insert product's dataframe into database
+create web interface
+create user area with auth (?)
