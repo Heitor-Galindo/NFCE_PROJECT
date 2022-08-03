@@ -1,5 +1,9 @@
 # NFCE 0.1
 
+## INSTALATION
+
+Execute `pip install -r requirements.txt` to install all dependencies. (must have pip installed)
+
 ## DOCUMENTATION
 
 ---
