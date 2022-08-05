@@ -2,8 +2,7 @@ import requests
 import re
 from database_operations.operations import execute_query
 from bs4 import BeautifulSoup
-import pandas as pd
-
+from unidecode import unidecode
 
 def nfce_extractor(link):
     def html_parser(url):
@@ -16,19 +15,14 @@ def nfce_extractor(link):
 
     page = html_parser(link[0])
 
-    vendor_name = page.find(class_="txtTopo").text
+    value = unidecode(re.sub("\s+", "_", (page.find(class_="tx").string)))
 
-    vendor_cnpj = re.sub(
-        "\s+", "", (page.find_all(class_="text")[0].string).split(":")[1]
-    )
-    vendor_address = re.sub("\t+|\n+", "", (page.find_all(class_="text")[1].string))
 
     print(
-        f"\n ---- \n \
-        name: {vendor_name} \n \
-        address: {vendor_address} \n \
-        cnpj: {vendor_cnpj} \
-        \n"
+f"\n \
+---- \n \
+{value} \n \
+---- \n\n"
     )
 
     # for data in vendor_cnpj:
