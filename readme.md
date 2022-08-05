@@ -1,5 +1,7 @@
 # NFCE 0.1
 
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
+
 ## INSTALATION
 
 1. Start Postgres 14.4.
