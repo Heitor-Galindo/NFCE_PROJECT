@@ -24,24 +24,24 @@
 ## DOCUMENTATION
 
 ---
-|APLICATION         |LINK                                                       |
-|:---               |:---                                                       |
-|PSYCOPG 3.1        | <https://www.psycopg.org/psycopg3/docs/index.html>        |
-|POSTGRES 14.4      | <https://www.postgresql.org/docs/current/index.html>      |
-|BEATIFULSOUP 4     | <https://beautiful-soup-4.readthedocs.io/en/latest/#>     |
-|DOTENV             | <https://github.com/theskumar/python-dotenv>              |
-|PYTHON 3.10        | <https://docs.python.org/3/>                              |
-|REQUESTS           | <https://requests.readthedocs.io/en/latest/>              |
-|PIP                | <https://pip.pypa.io/en/stable/getting-started/>          |
-|DOCKER ENGINE      | <https://docs.docker.com/engine/>                         |
-|DOCKER COMPOSE     | <https://docs.docker.com/compose/>                        |
-|PANDAS             | <https://pandas.pydata.org/docs/>                         |
+|APLICATION         |LINK
+|:---               |:---
+|PSYCOPG 3.1        | <https://www.psycopg.org/psycopg3/docs/index.html>
+|POSTGRES 14.4      | <https://www.postgresql.org/docs/current/index.html>
+|BEATIFULSOUP 4     | <https://beautiful-soup-4.readthedocs.io/en/latest/#>
+|DOTENV             | <https://github.com/theskumar/python-dotenv>
+|PYTHON 3.10        | <https://docs.python.org/3/>
+|REQUESTS           | <https://requests.readthedocs.io/en/latest/>
+|PIP                | <https://pip.pypa.io/en/stable/getting-started/>
+|DOCKER ENGINE      | <https://docs.docker.com/engine/>
+|DOCKER COMPOSE     | <https://docs.docker.com/compose/>
+|PANDAS             | <https://pandas.pydata.org/docs/>
+|UNIDECODE          | <https://pypi.org/project/Unidecode/#description>
 
 ---
 
 ## TO-DO
 
-add date/time of purchase to dataframe  
 add error dealing in functions  
 create table for products  
 create table for vendors (?)  
