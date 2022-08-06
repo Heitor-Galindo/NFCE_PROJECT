@@ -1,5 +1,8 @@
 """Saves html page for debug"""
+
+
 def sample_saver(soup):
-    with open("utils/sample.html", "w") as file:
+    """Create a html file for reference"""
+    with open("utils/sample.html", "w", encoding="utf8") as file:
         sample = str(soup)
         file.write(sample)
