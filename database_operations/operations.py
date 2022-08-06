@@ -1,5 +1,5 @@
-"""Avaliable operations:
-connection, insertion, retrieving.
+"""Database operations:
+fetchall, executemany
 """
 
 import os
@@ -10,6 +10,7 @@ load_dotenv()
 
 
 def execute_connection():
+    """Connect to database"""
     conn = psycopg.connect(
         host=os.getenv("POSTGRES_HOST"),
         port=os.getenv("POSTGRES_PORT"),
@@ -20,10 +21,24 @@ def execute_connection():
     return conn
 
 
-def execute_query(SQL):
+def execute_query(sql):
+    """Execute a query without params and return all results as a list"""
     conn = execute_connection()
     with conn.cursor() as cur:
-        cur.execute(SQL)
+        cur.execute(sql)
         response = cur.fetchall()
     return response
 
+
+def execute_insert(sql, data):
+    """Insert data into database"""
+    conn = execute_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.executemany(sql, data)
+    except Exception as error:
+        print(f"ERROR: {error}")
+    else:
+        print("done!")
+    finally:
+        conn.commit()
