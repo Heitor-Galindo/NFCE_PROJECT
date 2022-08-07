@@ -7,7 +7,7 @@
 1. Start Postgres 14.4.
 
     ```sh
-    docker compose -f database_operations/docker-compose.yml up
+    docker compose -f nfce_operations/database_operations/docker-compose.yml up
     ```
 
 2. Create a virtual environment. ( <https://docs.python.org/3/library/venv.html> )
