@@ -11,8 +11,8 @@ def execute_insert(sql, data):
         with conn.cursor() as cur:
             cur.executemany(sql, data)
     except Error as error:
-        print(f"ERROR: {error}")
+        print(f"DATABASE LOG: \n{error}")
+        return False
     else:
-        print("done!")
-    finally:
         conn.commit()
+        return True
