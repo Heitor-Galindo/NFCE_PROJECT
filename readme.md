@@ -23,6 +23,10 @@
     pip install -r utils/requirements.txt
     ```
 
+4. Copy and rename the `database_operations/template.env` to `database_operations/.env`
+
+5. Run `loader.py`
+
 ## DOCUMENTATION
 
 ---
