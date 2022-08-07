@@ -25,7 +25,7 @@ def nfce_data_list(page):
     vendor_address = re.sub(
         "\t+|\n+", "", (page.find_all(class_="text")[1].string)).upper()
 
-    nfce_data = [
+    nfce_row = [
         vendor_name,
         vendor_cnpj,
         vendor_address,
@@ -37,6 +37,6 @@ def nfce_data_list(page):
         payment_method,
     ]
 
-    nfce_data.append(nfce_data)
+    nfce_data.append(nfce_row)
 
     return nfce_data
