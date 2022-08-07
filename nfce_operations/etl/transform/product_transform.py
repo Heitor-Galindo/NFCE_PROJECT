@@ -4,12 +4,12 @@ import re
 from unidecode import unidecode
 
 
-# def find_children_span(item, index):
-#     """Extract item volume, volume type (KG/UN) and unit price"""
-#     index = int(index)
-#     data = re.sub(
-#         r"\s+", "", (item[0].findChildren("span")[index].text).split(":")[1])
-#     return data
+def find_children_span(item, index):
+    """Extract item volume, volume type (KG/UN) and unit price"""
+    index = int(index)
+    data = re.sub(
+        r"\s+", "", (item[0].findChildren("span")[index].text).split(":")[1])
+    return data
 
 
 def product_list(page):
@@ -24,11 +24,9 @@ def product_list(page):
         item_name = unidecode(
             re.sub(r"\sKg.*$", "", (item[0].span.string))).upper()
 
-        item_volume = float(
-            re.sub(",", ".", (item[0].findChildren("span")[2].text).split(":")[1]))
-        item_volume_type = (item[0].findChildren("span")[3].text).split(":")[1]
-        item_unit_price = float(
-            re.sub(",", ".", (item[0].findChildren("span")[4].text).split(":")[1]))
+        item_volume = float(re.sub(",", ".", (find_children_span(item, 2))))
+        item_volume_type = find_children_span(item, 3)
+        item_unit_price = float(re.sub(",", ".", (find_children_span(item, 4))))
 
         item_total_value = float(
             re.sub(",", ".", (item[1].findChildren("span")[0].text)))
