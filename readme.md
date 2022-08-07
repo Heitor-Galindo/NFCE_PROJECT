@@ -1,4 +1,4 @@
-# NFCE 0.1
+# NFCE 0.2
 
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
 
@@ -7,7 +7,7 @@
 1. Start Postgres 14.4.
 
     ```sh
-    docker compose -f nfce_operations/database_operations/docker-compose.yml up
+    ./infrastructure-nfce-database.sh
     ```
 
 2. Create a virtual environment. ( <https://docs.python.org/3/library/venv.html> )
